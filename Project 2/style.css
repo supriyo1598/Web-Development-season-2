@@ -1,0 +1,618 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container,
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 24px;
+  background: #f9f9ff;
+  border: 1px solid #f9f9ff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-transition: background 800ms, color 800ms, border 800ms;
+  transition: background 800ms, color 800ms, border 800ms;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 24px 0;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 18px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./img/banner-bg.jpg") no-repeat center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.main .container .mainInfo h2 {
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.main .container .mainInfo p {
+  margin: 10px 0 0 0;
+}
+
+.main .container .mainInfo .btn {
+  margin: 20px 0;
+}
+
+.products {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.products .title {
+  text-align: center;
+}
+
+.products .title h2 {
+  font-size: 34px;
+}
+
+.products .title p {
+  font-size: 14px;
+  color: #777;
+  margin: 13px 0 0 0;
+}
+
+.products .container {
+  padding: 60px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products .container .card {
+  width: 100%;
+  max-width: 23%;
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+          box-shadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+}
+
+.products .container .card:hover .cardInfo .btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: #fff;
+}
+
+.products .container .card .cardBg {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 26px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.products .container .card .cardInfo {
+  text-align: center;
+  padding: 18px;
+  background: #f9f9ff;
+}
+
+.products .container .card .cardInfo p {
+  margin: 13px 0;
+  color: #777;
+  line-height: 1.5;
+}
+
+.products .container .card .cardInfo .btn {
+  background: #fff;
+  color: #000;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.connect {
+  width: 100%;
+}
+
+.connect .container {
+  max-width: 100%;
+}
+
+.connect .container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0;
+}
+
+.connect .container .card .connectBg {
+  width: 100%;
+  max-width: 50%;
+  height: 500px;
+  background: url("./img/about-img.png") no-repeat center/cover;
+}
+
+.connect .container .card .connectInfo {
+  width: 100%;
+  max-width: 50%;
+  padding: 0 26px;
+}
+
+.connect .container .card .connectInfo span {
+  color: #8a90ff;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.connect .container .card .connectInfo h2 {
+  font-size: 36px;
+}
+
+.connect .container .card .connectInfo p {
+  color: #777;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.connect .container .card .connectInfo p:first-of-type {
+  margin: 16px 0;
+  color: #000;
+  line-height: 1;
+}
+
+.connect .container .card .connectInfo .btn {
+  margin: 14px 0 0 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 34px;
+}
+
+.connect .container .card .connectInfo .btn:hover {
+  color: #8a90ff;
+  background: #fff;
+  border: 1px solid #8a90ff;
+}
+
+.connect .container .card.second {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0 100px 0;
+}
+
+.connect .container .card.second .connectInfo {
+  max-width: 50%;
+}
+
+.connect .container .card.second .connectBg {
+  height: 320px;
+  background: url("./img/video-bg.jpg") no-repeat center/cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+}
+
+.connect .container .card.second .connectBg .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  opacity: 0.7;
+}
+
+.connect .container .card.second .connectBg i {
+  margin: auto;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+
+.features {
+  padding: 100px 0;
+  width: 100%;
+  background: url("./img/feature-bg.jpg") no-repeat center/cover;
+}
+
+.features .title {
+  text-align: center;
+  color: #fff;
+}
+
+.features .title h2 {
+  font-size: 34px;
+}
+
+.features .title p {
+  font-size: 14px;
+  margin-top: 13px;
+}
+
+.features .container {
+  width: 100%;
+  padding: 60px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features .container .featureCard {
+  width: 100%;
+  max-width: 31%;
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 40px 30px;
+  cursor: pointer;
+  margin: 16px;
+}
+
+.features .container .featureCard:hover .cardTitle i, .features .container .featureCard:hover .cardTitle h3 {
+  color: #8a90ff;
+  -webkit-transition: color 700ms;
+  transition: color 700ms;
+}
+
+.features .container .featureCard .cardTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .container .featureCard .cardTitle i {
+  margin-right: 8px;
+}
+
+.features .container .featureCard .cardDesc p {
+  margin: 18px 0 0 0;
+  color: #777;
+  line-height: 1.4;
+}
+
+.sponsors {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.sponsors .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sponsors .container img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  cursor: pointer;
+  -webkit-transition: -webkit-filter 700ms;
+  transition: -webkit-filter 700ms;
+  transition: filter 700ms;
+  transition: filter 700ms, -webkit-filter 700ms;
+}
+
+.sponsors .container img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.blog {
+  padding: 0 0 80px 0;
+  width: 100%;
+}
+
+.blog .title {
+  text-align: center;
+}
+
+.blog .title h2 {
+  font-size: 34px;
+}
+
+.blog .title p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 13px;
+}
+
+.blog .container {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog .container .blogCard {
+  max-width: 48%;
+  -webkit-box-shadow: 5px 5px 10px #777;
+          box-shadow: 5px 5px 10px #777;
+  padding: 50px;
+  border-radius: 14px;
+}
+
+.blog .container .blogCard .blogBg {
+  background: url("./img/b1.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 340px;
+  border-radius: 14px;
+}
+
+.blog .container .blogCard .blogBg.second {
+  background: url("./img/b2.jpg") no-repeat center/cover;
+}
+
+.blog .container .blogCard .blogInfo .heading {
+  padding: 14px 0;
+}
+
+.blog .container .blogCard .blogInfo .heading .btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.blog .container .blogCard .blogInfo .desc p {
+  margin: 14px 0;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.blog .container .blogCard .blogInfo .desc span {
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  background: url("./img/footer-bg.jpg") no-repeat center/cover;
+}
+
+footer .container {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container h2 {
+  color: #fff;
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 21px;
+}
+
+footer .container .footerCard {
+  max-width: 23%;
+}
+
+footer .container .footerCard.cardone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .footerCard.cardone a {
+  text-decoration: none;
+  color: #eee;
+  font-weight: 200;
+  margin-bottom: 10px;
+  -webkit-transition: color 600ms;
+  transition: color 600ms;
+}
+
+footer .container .footerCard.cardone a:hover {
+  color: #8a90ff;
+}
+
+footer .container .footerCard.cardtwo {
+  max-width: 50%;
+}
+
+footer .container .footerCard.cardtwo p {
+  color: #eee;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer .container .footerCard.cardtwo .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+footer .container .footerCard.cardtwo .email input {
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  width: 60%;
+  margin-right: 24px;
+}
+
+footer .container .footerCard.cardtwo .email .btn {
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  border: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+footer .container .footerCard.cardtwo .email .btn:hover {
+  background: #8a90ff;
+}
+
+footer .container .footerCard.cardtwo .email .btn i {
+  margin-left: 5px;
+}
+
+footer .container .footerCard.cardthree .imgwrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .footerCard.cardthree .imgwrap img {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+footer .wrapper {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+footer .wrapper .copyright p {
+  color: #eee;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+footer .wrapper .copyright p i {
+  color: #8a90ff;
+}
+
+footer .wrapper .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .wrapper .icons .box {
+  background: #111;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+footer .wrapper .icons .box:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+}
+
+footer .wrapper .icons .box i {
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */

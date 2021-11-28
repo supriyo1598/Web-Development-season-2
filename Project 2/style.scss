@@ -1,0 +1,477 @@
+$wt: #fff;
+$bl: #000;
+$grey: #777;
+$greybg: #f9f9ff;
+$iconbg: #111;
+$bdc: #eee;
+$blue: #8a90ff;
+$boxshadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
+$gradient: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container,
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 24px;
+  background: $greybg;
+  border: 1px solid $greybg;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 800ms, color 800ms, border 800ms;
+  &:hover {
+    background: transparent;
+    border: 1px solid $wt;
+    color: $wt;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 24px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu {
+      a {
+        text-decoration: none;
+        color: $wt;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 18px;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: url("./img/banner-bg.jpg") no-repeat center/cover;
+  display: flex;
+  .container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $wt;
+    .mainInfo {
+      h2 {
+        font-size: 68px;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+      p {
+        margin: 10px 0 0 0;
+      }
+      .btn {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+.products {
+  width: 100%;
+  padding: 80px 0;
+  .title {
+    text-align: center;
+    h2 {
+      font-size: 34px;
+    }
+    p {
+      font-size: 14px;
+      color: $grey;
+      margin: 13px 0 0 0;
+    }
+  }
+  .container {
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      width: 100%;
+      max-width: 23%;
+      box-shadow: $boxshadow;
+      &:hover {
+        .cardInfo {
+          .btn {
+            background: $gradient;
+            color: $wt;
+          }
+        }
+      }
+      .cardBg {
+        background: $wt;
+        display: flex;
+        justify-content: center;
+        padding: 26px 0;
+        border-bottom: 1px solid $bdc;
+        cursor: pointer;
+      }
+      .cardInfo {
+        text-align: center;
+        padding: 18px;
+        background: $greybg;
+        p {
+          margin: 13px 0;
+          color: $grey;
+          line-height: 1.5;
+        }
+        .btn {
+          background: $wt;
+          color: $bl;
+          transition: none;
+        }
+      }
+    }
+  }
+}
+
+.connect {
+  width: 100%;
+  .container {
+    max-width: 100%;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 0;
+      .connectBg {
+        width: 100%;
+        max-width: 50%;
+        height: 500px;
+        background: url("./img/about-img.png") no-repeat center/cover;
+      }
+      .connectInfo {
+        width: 100%;
+        max-width: 50%;
+        padding: 0 26px;
+        span {
+          color: $blue;
+          font-size: 14px;
+          margin-bottom: 8px;
+          display: block;
+        }
+        h2 {
+          font-size: 36px;
+        }
+        p {
+          color: $grey;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 1.6;
+          &:first-of-type {
+            margin: 16px 0;
+            color: $bl;
+            line-height: 1;
+          }
+        }
+        .btn {
+          margin: 14px 0 0 0;
+          background: $gradient;
+          color: $wt;
+          border: 1px solid transparent;
+          padding: 14px 34px;
+          &:hover {
+            color: $blue;
+            background: $wt;
+            border: 1px solid $blue;
+          }
+        }
+      }
+      &.second {
+        flex-direction: row-reverse;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 0 100px 0;
+        .connectInfo {
+          max-width: 50%;
+        }
+        .connectBg {
+          height: 320px;
+          background: url("./img/video-bg.jpg") no-repeat center/cover;
+          position: relative;
+          display: flex;
+          max-width: 50%;
+          .overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: $gradient;
+            opacity: 0.7;
+          }
+          i {
+            margin: auto;
+            position: relative;
+            color: $wt;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.features{
+  padding: 100px 0;
+  width: 100%;
+  background: url("./img/feature-bg.jpg") no-repeat center/cover;
+  .title{
+    text-align: center;
+    color: $wt;
+    h2{
+      font-size: 34px;
+    }
+    p{
+      font-size: 14px;
+      margin-top: 13px;
+    }
+  }
+  .container{
+    width: 100%;
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+    .featureCard{
+      width: 100%;
+      max-width: 31%;
+      background: $greybg;
+      border-radius: 10px;
+      padding: 40px 30px;
+      cursor: pointer;
+      margin: 16px;
+      &:hover{
+        .cardTitle{
+          i,h3{
+            color: $blue;
+            transition: color 700ms;
+          }
+        }
+      }
+      .cardTitle{
+        display: flex;
+        align-items: center;
+        i{
+          margin-right: 8px;
+        }
+      }
+      .cardDesc{
+        p{
+          margin: 18px 0 0 0;
+          color: $grey;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+
+}
+.sponsors{
+  width: 100%;
+  padding:100px 0 ;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    img{
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: filter 700ms;
+      &:hover{
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+.blog{
+  padding: 0 0 80px 0;
+  width: 100%;
+  .title{
+    text-align: center;
+    h2{
+      font-size: 34px;
+    }
+    p{
+      font-size: 14px;
+      color: $grey;
+      margin-top: 13px;
+    }
+  }
+  .container{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    .blogCard{
+      max-width: 48%;
+      box-shadow: 5px 5px 10px $grey;
+      padding: 50px;
+      border-radius: 14px;
+      .blogBg{
+        background: url("./img/b1.jpg") no-repeat center/cover;
+        width: 100%;
+        height: 340px;
+        border-radius: 14px;
+        &.second{
+          background: url("./img/b2.jpg") no-repeat center/cover;
+        }
+      }
+      .blogInfo{
+        .heading{
+          padding: 14px 0;
+          .btn{
+            background: $gradient;
+            color: $wt;
+            padding: 10px 20px;
+            border-radius: 0;
+            font-weight: 400;
+            text-transform: capitalize;
+          }
+        }
+        .desc{
+          p{
+            margin: 14px 0;
+            color: $grey;
+            font-size: 15px;
+            line-height: 1.5;
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  width: 100%;
+  background: url("./img/footer-bg.jpg") no-repeat center/cover;
+  .container{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    h2{
+      color: $wt;
+      margin-bottom: 22px;
+      font-weight: 400;
+      font-size: 21px;
+    }
+    .footerCard{
+      max-width: 23%;
+      &.cardone{
+        display: flex;
+        flex-direction: column;
+        a{
+          text-decoration: none;
+          color: $bdc;
+          font-weight: 200;
+          margin-bottom: 10px;
+          transition: color 600ms;
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+      &.cardtwo{
+        max-width: 50%;
+        p{
+          color: $bdc;
+          font-size: 15px;
+          font-weight: 300;
+        }
+        .email{
+          display: flex;
+          align-items: center;
+          padding: 20px 0;
+          input{
+            padding: 14px;
+            border:none;
+            outline: none;
+            border-radius: 50px;
+            width: 60%;
+            margin-right: 24px;
+          }
+          .btn{
+            border-radius: 50px;
+            background: $gradient;
+            border:none;
+            color: $wt;
+            font-weight: 400;
+            &:hover{
+              background: $blue;
+            }
+            i{
+              margin-left: 5px;
+            }
+
+          }
+        }
+
+      }
+      &.cardthree{
+        .imgwrap{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          img{
+            margin-bottom: 8px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .wrapper{
+    color: $wt;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    .copyright{
+      p{
+        color: $bdc;
+        font-size: 15px;
+        font-weight: 300;
+        i{
+          color: $blue;
+        }
+      }
+    }
+    .icons{
+      display: flex;
+      .box{
+        background: $iconbg;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        display: flex;
+        cursor: pointer;
+        &:hover{
+          background: $gradient;
+        }
+        i{
+          margin: auto;
+        }
+      }
+    }
+  }
+
+}
